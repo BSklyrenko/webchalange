@@ -1,0 +1,41 @@
+doctype html
+html
+  include templates/head.pug
+  body
+    header.container--fixed
+      include templates/nav.pug
+    .lectures-page
+      .lectures-page__wrapper
+        .container.container--wide
+          .bread-crumbs
+            a(href="#").fa.fa-angle-left
+            ul
+              li <a href="#">ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ</a>
+              li <a href="#" class="active">ЛЕКЦИИ</a>
+        .container
+          .lectures-page__list
+            -
+              var content = [
+                {type: 'Лекция-эксперимент', title: 'ДИФУЗИЯ.ВЗАИМОДЕЙСТВИЕ МОЛЕКУЛ И АТОМОВ В ПРИРОДЕ', price: ' 250 грн', time: ' Понедельник 12:30', img: ''},
+                {type: 'Лекция-эксперимент', title: 'ПРИРОДА МАГНИТОВ. ЭКСПЕРИМЕНТЫ С МАГНИТАМИ И ЖЕЛЕЗОМ', price: ' 90 грн', time: ' Понедельник 15:30', img: ''},
+                {type: 'Выставка  «Свет и призма»', title: 'ИНСТАЛЯЦИИ С СВЕТОВЫМИ ЭФФЕКТАМИ', price: ' 300 грн', time: ' Понедельник 10:00', img: ''},
+                {type: 'Лекция-эксперимент', title: 'ПРИРОДЫ СВЕТА. ЭФФЕКТ ПРИЛОМЛЕНИЯ В ВОДЕ', price: ' 90 грн', time: ' Понедельник 15:30', img: ''}
+              ];
+            each item in content
+              .lectures-page__lection
+
+                .lectures-page__description
+                  div= item.type
+                  h3= item.title
+                  a(href="lecture.html") ПОДРОБНЕЕ
+                  div
+                    p Время проведения:
+                      span= item.time
+                    p Цена: от
+                      span= item.price
+                .lectures-page__illustration
+
+    include templates/common-contacts.pug
+    include templates/footer.pug
+
+    script(src="app.js")

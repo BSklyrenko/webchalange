@@ -1,0 +1,116 @@
+doctype html
+html
+  include templates/head.pug
+  body
+    header.container--fixed
+      include templates/nav.pug
+    .home__header
+      .background-slider.js-main-slider
+        .background-slider__slide(style='background-image: url("images/diffusion.jpg"); background-position: center 70%;')
+        .background-slider__slide(style='background-image: url("images/diffusion.jpg"); background-position: center 70%;')
+        .background-slider__slide(style='background-image: url("images/diffusion.jpg"); background-position: center 70%;')
+        .background-slider__slide(style='background-image: url("images/diffusion.jpg"); background-position: center 70%;')
+
+      .container
+        .main-line
+        .arrow.arrow--left.js-slide-left
+        .arrow.arrow--right.js-slide-right
+        .main
+          .events.js-event-slider
+            include templates/homepage/event.pug
+            include templates/homepage/event.pug
+            include templates/homepage/event.pug
+            include templates/homepage/event.pug
+
+          .benefits.benefits--slider.js-benefits-slider
+            include templates/homepage/benefit.pug
+            include templates/homepage/benefit.pug
+            include templates/homepage/benefit.pug
+          .benefits
+            a(href="").benefits__element
+              .benefits__icon(style="width: 83px;")
+                img(src="./images/icons/camera.png")
+              .benefits__title 3D ТУР ПО <br> ЭКСПЕРИМЕНТАРИОМУ
+              .benefits__description Уникальная возможность просмотреть экспозицию, <br> не выходя из дома
+          .benefits.benefits--green
+            a(href="").benefits__element
+              .benefits__icon(style="width: 59px;")
+                img(src="./images/icons/tickets.png")
+              .benefits__title БИЛЕТЫ, <br> ГРАФИК РАБОТЫ МУЗЕЯ
+              .benefits__description Информация про расписание роботы, цены на билеты, <br> доступные скидки и акции
+
+    .container
+      .news.js-news-slider
+        include templates/homepage/news_item.pug
+        include templates/homepage/news_item.pug
+        include templates/homepage/news_item.pug
+
+    .activities
+      .container
+        .activities__menu
+          .activities__illustration(style="background-image: url('images/celebration.jpg'); background-size: cover;")
+          .activities__item.activities__item--lime
+            div
+              .activities__icon(style="width: 61px;")
+                img(src="images/icons/cake.png")
+              h4.activities__title ПРАЗДНУЙ ДЕНЬ РОЖДЕНИЕ В МУЗЕЕ!
+              .activities__description Желаешь устроить своему ребенку по-настоящему незабываемый праздник? Тогда услуга специально для вас.
+          .activities__item.activities__item--orange
+            div
+              .activities__icon(style="width: 59px;")
+                img(src="images/icons/proof.png")
+              h4.activities__title
+                <div>НАУЧНЫЙ КРУЖОК</div> &laquo;ИНТЕРЕСНАЯ ХИМИЯ С ВОЛОНТЕРОМ ВАЙТОМ&raquo;
+              .activities__description Ваш ребенок любит &laquo;похимичить&raquo; дома? Приводите ее к нам, на занятия кружка &laquo;Интересная химия&raquo;!
+          .activities__illustration(style="background-image: url('images/science-party.jpg'); background-size: cover;")
+    .lectures
+      .container
+        .lectures__slider.js-lectures-slider
+          include templates/homepage/lecture.pug
+          include templates/homepage/lecture.pug
+          include templates/homepage/lecture.pug
+          include templates/homepage/lecture.pug
+    .contacts
+      .container.container--z-index10
+        .contacts__wrapper
+
+          .contacts__info
+            div
+              p Ждем вас по адресу
+              p Г. КИЕВ, УЛ. ВЕРХНИЙ ВАЛ 2А
+            div
+              p График работы музея:
+              p ПН-ВЫХОДНОЙ
+              p ВТ-ПТ: 09:30 - 19:00
+              p СБ-ВС, ПРАЗДНИКИ: 10:00 - 20:00
+            div
+              p Контакты
+              p +38 (044) 425-65-81,
+              p +38 (096) 477-97-91,
+              p +38 (099) 256-71-27
+            p enjoy@experimentanium.com.ua
+
+          .contacts__attributes
+            .contacts__attribute(style='background-image: url("images/homepage/cafe.jpg"); background-position: -132px -20px;')
+              .filter
+              .contacts__link
+                div(style='width: 55px;')
+                  img(src="images/icons/coffee.png")
+                a(href="#") КАФЕТЕРИЙ
+            .contacts__attribute(style='background-image: url("images/homepage/shop.jpg"); background-position: -156px -295px;')
+              .filter
+              .contacts__link
+                div(style='width: 40px;')
+                  img(src="images/icons/shop.png")
+                a(href="#") МАГАЗИН
+            .contacts__attribute
+            .contacts__attribute(style='background-image: url("images/homepage/portal.jpg"); background-position: -128px -63px;')
+              .filter
+              .contacts__link
+                div(style='width: 49px;')
+                  img(src="images/icons/atom.png")
+                a(href="#") ОБРАЗОВАТЕЛЬНЫЙ ПОРТАЛ
+
+    include templates/footer.pug
+
+    script(src="app.js")

@@ -1,0 +1,283 @@
+.container {
+  max-width: 1220px;
+  margin: auto;
+  position: relative;
+
+  &.container--wide {
+    max-width: 1320px;
+  }
+
+  &--z-index10 {
+    z-index: 10;
+  }
+
+  &--fixed {
+    @media (min-width: 1320px) {
+      & {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+
+        & > * {
+
+        }
+        // position: fixed;
+        // top: 0;
+        // left: 50%;
+        // z-index: 100;
+        // margin-left: -660px;
+      }
+    }
+  }
+
+  &--full {
+    width: 100%;
+  }
+}
+
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  background-color: #530f89;
+  width: 70px;
+  height: 5px;
+  // top: 200px;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+  &--left {
+    left: 0;
+
+    &:after {
+      @include arrow(0);
+      left: 0;
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &:before {
+      @include arrow(0);
+      left: 0;
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--right {
+    right: 0;
+
+    &:after {
+      @include arrow(100%);
+      right: 0;
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+    &:before {
+      @include arrow(100%);
+      right: 0;
+      top: 0;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.filter {
+  @include absolute-full-size;
+
+  &--orange { background-color: rgba(222, 121, 13, .7); }
+  &--main { background-color: rgba(144, 81, 202, .96); }
+
+}
+
+.gradient {
+  @include absolute-full-size;
+
+  &--main-transparent {
+    background-image: linear-gradient(0deg, rgb(145, 83, 204), transparent 30%);
+  }
+}
+
+.bread-crumbs {
+  display: none;
+  color: #afaab4;
+
+  .fa {
+    font-size: 2.5rem;
+    color: #afaab4;
+    text-decoration: none;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+
+    &:nth-child(n+2) {
+      &::before {
+        content: '/';
+        font-weight: bold;
+        margin-right: 5px;
+      }
+    }
+
+    a {
+      font-family: 'Open-Sans', sans-serif;
+      font-weight: bold;
+      font-size: .9375;
+      text-decoration: none;
+      color: #afaab4;
+      transition: color .2s;
+    }
+  }
+
+  a {
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  .active {
+    color: $color-white;
+  }
+
+  @media (min-width: 992px) {
+    & {
+      display: flex;
+    }
+  }
+}
+
+.common-contacts {
+  @include half-main-color(45%);
+  position: relative;
+
+  @media (min-width: 992px) { padding-top: 90px; }
+
+  &__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+
+    @media (min-width: 992px) { flex-wrap: nowrap; }
+  }
+
+  &__info {
+    flex-basis: 100%;
+    order: 2;
+    font-family: 'Roboto', sans-serif;
+    color: $color-white;
+    text-align: center;
+    font-size: .75rem;
+
+    & > div {
+      margin-bottom: 40px;
+
+      p {
+        margin: 0;
+        line-height: 1rem;
+        &:first-child { margin-bottom: 10px; }
+      }
+
+      &:first-child {
+        margin-top: 40px;
+        p { &:last-child { font-weight: bold; } }
+      }
+    }
+
+    @media (min-width: 992px) {
+      flex: 1;
+      order: 1;
+      flex-basis: auto;
+    }
+  }
+
+  &__map {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+      order: 2;
+      width: 570px;
+      background-color: #999;
+    }
+
+  }
+
+  &__booking {
+    display: flex;
+    flex-basis: 100%;
+    order: 1;
+    background-color: $color-main-orange2;
+
+    & > div {
+      margin: auto;
+    }
+
+    p {
+      font-family: 'Roboto-Condensed', sans-serif;
+      font-size: 1.125rem;
+      font-weight: bold;
+      color: $color-white;
+    }
+
+    form {
+      font-family: 'Roboto', sans-serif;
+      font-size: .875rem;
+      display: inline-block;
+
+      input {
+        padding: 10px;
+        margin-bottom: 15px;
+        width: 160px;
+        box-sizing: border-box;
+
+        @include placeholder-style(#464646);
+
+        &:first-child {
+          width: 340px;
+          display: block;
+        }
+
+        &:last-of-type {
+          margin-left: 15px;
+          @include placeholder-style(#c2c2c2, italic);
+        }
+      }
+
+      button {
+        font-family: 'Roboto-Condensed', sans-serif;
+        background-color: transparent;
+        border: 1px solid $color-white;
+        color: $color-white;
+        padding: 15px 25px;
+        cursor: pointer;
+        display: block;
+        transition: color .2s, background-color .2s;
+
+        &:hover {
+          color: $color-main-orange2;
+          background-color: $color-white;
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      flex-basis: 480px;
+      order: 3;
+    }
+  }
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="container--fixed">
+      <div class="container container--wide" data-fixed="false">
+        <div class="nav">
+          <div class="nav__search">
+            <form>
+              <button type="submit"><i class="fa fa-search"></i></button>
+              <input type="text">
+            </form>
+            <div class="nav__language"><span>РУС</span><i class="fa fa-chevron-down"></i></div>
+          </div>
+          <div class="nav__content">
+            <div class="nav__title">
+              <div class="nav__logo"><img src="./images/logo.png"></div>
+              <div>
+                <h1>Эксперементаниум</h1>
+                <p>Музей популярной науки и техники</p>
+              </div><i class="fa fa-bars js-toggle-nav"></i>
+            </div>
+            <div class="nav__navigation"><a class="nav__link" href="home.html">ГЛАВНАЯ</a><span class="nav__link">ЭКСПОЗИЦИЯ И ШОУ<i class="fa fa-bars js-toggle-sub-nav"></i>
+                <div class="nav__slide-menu">
+                  <div class="nav__sublink">ШОУ В МУЗЕЕ</div>
+                  <div class="nav__sublink">СОБЫТИЯ И ЛЕКЦИИ</div>
+                  <div class="nav__sublink">ВЫЕЗДНЫЕ ШОУ</div>
+                  <div class="nav__sublink">3D ТУР</div>
+                </div></span><a class="nav__link" href="">НОВОСТИ</a><a class="nav__link" href="">ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ</a><a class="nav__link" href="">ОРГАНИЗАЦИЯ ПРАЗДНИКОВ</a><a class="nav__link" href="">О НАС</a></div>
+            <button class="nav__buy">БИЛЕТЫ</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="home__header">
+      <div class="background-slider js-main-slider">
+        <div class="background-slider__slide" style="background-image: url(&quot;images/diffusion.jpg&quot;); background-position: center 70%"></div>
+        <div class="background-slider__slide" style="background-image: url(&quot;images/diffusion.jpg&quot;); background-position: center 70%"></div>
+        <div class="background-slider__slide" style="background-image: url(&quot;images/diffusion.jpg&quot;); background-position: center 70%"></div>
+        <div class="background-slider__slide" style="background-image: url(&quot;images/diffusion.jpg&quot;); background-position: center 70%"></div>
+      </div>
+      <div class="container">
+        <div class="main-line"></div>
+        <div class="arrow arrow--left js-slide-left"></div>
+        <div class="arrow arrow--right js-slide-right"></div>
+        <div class="main">
+          <div class="events js-event-slider">
+            <div class="events__event">
+              <div class="events__date"><span>12</span>\09\2016</div>
+              <div class="events__theme">Лекция-эксперимент</div>
+              <h3 class="events__title">ДИФУЗИЯ. ВЗАИМОДЕЙСТВИЕ МОЛЕКУЛ И АТОМОВ В ПРИРОДЕ.</h3><a class="events__button" href="lecture.html">ПОДРОБНЕЕ</a><a class="events__button" href="#">ПРИОБРЕСТИ БИЛЕТЫ</a>
+            </div>
+            <div class="events__event">
+              <div class="events__date"><span>12</span>\09\2016</div>
+              <div class="events__theme">Лекция-эксперимент</div>
+              <h3 class="events__title">ДИФУЗИЯ. ВЗАИМОДЕЙСТВИЕ МОЛЕКУЛ И АТОМОВ В ПРИРОДЕ.</h3><a class="events__button" href="lecture.html">ПОДРОБНЕЕ</a><a class="events__button" href="#">ПРИОБРЕСТИ БИЛЕТЫ</a>
+            </div>
+            <div class="events__event">
+              <div class="events__date"><span>12</span>\09\2016</div>
+              <div class="events__theme">Лекция-эксперимент</div>
+              <h3 class="events__title">ДИФУЗИЯ. ВЗАИМОДЕЙСТВИЕ МОЛЕКУЛ И АТОМОВ В ПРИРОДЕ.</h3><a class="events__button" href="lecture.html">ПОДРОБНЕЕ</a><a class="events__button" href="#">ПРИОБРЕСТИ БИЛЕТЫ</a>
+            </div>
+            <div class="events__event">
+              <div class="events__date"><span>12</span>\09\2016</div>
+              <div class="events__theme">Лекция-эксперимент</div>
+              <h3 class="events__title">ДИФУЗИЯ. ВЗАИМОДЕЙСТВИЕ МОЛЕКУЛ И АТОМОВ В ПРИРОДЕ.</h3><a class="events__button" href="lecture.html">ПОДРОБНЕЕ</a><a class="events__button" href="#">ПРИОБРЕСТИ БИЛЕТЫ</a>
+            </div>
+          </div>
+          <div class="benefits benefits--slider js-benefits-slider"><a class="benefits__element benefits__element--slide" href="">
+              <div class="benefits__icon" style="width: 50px"><img src="./images/icons/speaker.png"></div>
+              <div class="benefits__title">АКЦИИ И СКИДКИ</div>
+              <div class="benefits__notification">Активным посетителям детского <br> лагеря - скидка!</div>
+              <div class="benefits__description">При оплате 5 дней пребывания в детском легере <br> &laquo;Летние каникулы в музее&raquo; - скидка!</div></a><a class="benefits__element benefits__element--slide" href="">
+              <div class="benefits__icon" style="width: 50px"><img src="./images/icons/speaker.png"></div>
+              <div class="benefits__title">АКЦИИ И СКИДКИ</div>
+              <div class="benefits__notification">Активным посетителям детского <br> лагеря - скидка!</div>
+              <div class="benefits__description">При оплате 5 дней пребывания в детском легере <br> &laquo;Летние каникулы в музее&raquo; - скидка!</div></a><a class="benefits__element benefits__element--slide" href="">
+              <div class="benefits__icon" style="width: 50px"><img src="./images/icons/speaker.png"></div>
+              <div class="benefits__title">АКЦИИ И СКИДКИ</div>
+              <div class="benefits__notification">Активным посетителям детского <br> лагеря - скидка!</div>
+              <div class="benefits__description">При оплате 5 дней пребывания в детском легере <br> &laquo;Летние каникулы в музее&raquo; - скидка!</div></a></div>
+          <div class="benefits"><a class="benefits__element" href="">
+              <div class="benefits__icon" style="width: 83px"><img src="./images/icons/camera.png"></div>
+              <div class="benefits__title">3D ТУР ПО <br> ЭКСПЕРИМЕНТАРИОМУ</div>
+              <div class="benefits__description">Уникальная возможность просмотреть экспозицию, <br> не выходя из дома</div></a></div>
+          <div class="benefits benefits--green"><a class="benefits__element" href="">
+              <div class="benefits__icon" style="width: 59px"><img src="./images/icons/tickets.png"></div>
+              <div class="benefits__title">БИЛЕТЫ, <br> ГРАФИК РАБОТЫ МУЗЕЯ</div>
+              <div class="benefits__description">Информация про расписание роботы, цены на билеты, <br> доступные скидки и акции</div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="news js-news-slider">
+        <div class="news__item">
+          <div class="news__title">
+            <div>
+              <div>14/04/16</div>
+              <h4>Музей &laquo;Экспериментаниум&raquo; побывал на допремьерном показе мультфильма <br> "Норм и Непобежденные"</h4>
+            </div>
+            <div class="news__details" style="background-image: url('images/news.jpg')">
+              <div class="filter filter--orange"></div>
+              <div class="news__links"></div><a href="#">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="news__title">
+            <div>
+              <div>14/04/16</div>
+              <h4>Музей &laquo;Экспериментаниум&raquo; побывал на допремьерном показе мультфильма <br> "Норм и Непобежденные"</h4>
+            </div>
+            <div class="news__details" style="background-image: url('images/news.jpg')">
+              <div class="filter filter--orange"></div>
+              <div class="news__links"></div><a href="#">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="news__title">
+            <div>
+              <div>14/04/16</div>
+              <h4>Музей &laquo;Экспериментаниум&raquo; побывал на допремьерном показе мультфильма <br> "Норм и Непобежденные"</h4>
+            </div>
+            <div class="news__details" style="background-image: url('images/news.jpg')">
+              <div class="filter filter--orange"></div>
+              <div class="news__links"></div><a href="#">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+        </div>
+        <div class="news__item">
+          <div class="news__title">
+            <div>
+              <div>14/04/16</div>
+              <h4>Музей &laquo;Экспериментаниум&raquo; побывал на допремьерном показе мультфильма <br> "Норм и Непобежденные"</h4>
+            </div>
+            <div class="news__details" style="background-image: url('images/news.jpg')">
+              <div class="filter filter--orange"></div>
+              <div class="news__links"></div><a href="#">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="news__title">
+            <div>
+              <div>14/04/16</div>
+              <h4>Музей &laquo;Экспериментаниум&raquo; побывал на допремьерном показе мультфильма <br> "Норм и Непобежденные"</h4>
+            </div>
+            <div class="news__details" style="background-image: url('images/news.jpg')">
+              <div class="filter filter--orange"></div>
+              <div class="news__links"></div><a href="#">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="news__title">
+            <div>
+              <div>14/04/16</div>
+              <h4>Музей &laquo;Экспериментаниум&raquo; побывал на допремьерном показе мультфильма <br> "Норм и Непобежденные"</h4>
+            </div>
+            <div class="news__details" style="background-image: url('images/news.jpg')">
+              <div class="filter filter--orange"></div>
+              <div class="news__links"></div><a href="#">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+        </div>
+        <div class="news__item">
+          <div class="news__title">
+            <div>
+              <div>14/04/16</div>
+              <h4>Музей &laquo;Экспериментаниум&raquo; побывал на допремьерном показе мультфильма <br> "Норм и Непобежденные"</h4>
+            </div>
+            <div class="news__details" style="background-image: url('images/news.jpg')">
+              <div class="filter filter--orange"></div>
+              <div class="news__links"></div><a href="#">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="news__title">
+            <div>
+              <div>14/04/16</div>
+              <h4>Музей &laquo;Экспериментаниум&raquo; побывал на допремьерном показе мультфильма <br> "Норм и Непобежденные"</h4>
+            </div>
+            <div class="news__details" style="background-image: url('images/news.jpg')">
+              <div class="filter filter--orange"></div>
+              <div class="news__links"></div><a href="#">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="news__title">
+            <div>
+              <div>14/04/16</div>
+              <h4>Музей &laquo;Экспериментаниум&raquo; побывал на допремьерном показе мультфильма <br> "Норм и Непобежденные"</h4>
+            </div>
+            <div class="news__details" style="background-image: url('images/news.jpg')">
+              <div class="filter filter--orange"></div>
+              <div class="news__links"></div><a href="#">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="activities">
+      <div class="container">
+        <div class="activities__menu">
+          <div class="activities__illustration" style="background-image: url('images/celebration.jpg'); background-size: cover"></div>
+          <div class="activities__item activities__item--lime">
+            <div>
+              <div class="activities__icon" style="width: 61px"><img src="images/icons/cake.png"></div>
+              <h4 class="activities__title">ПРАЗДНУЙ ДЕНЬ РОЖДЕНИЕ В МУЗЕЕ!</h4>
+              <div class="activities__description">Желаешь устроить своему ребенку по-настоящему незабываемый праздник? Тогда услуга специально для вас.</div>
+            </div>
+          </div>
+          <div class="activities__item activities__item--orange">
+            <div>
+              <div class="activities__icon" style="width: 59px"><img src="images/icons/proof.png"></div>
+              <h4 class="activities__title"><div>НАУЧНЫЙ КРУЖОК</div> &laquo;ИНТЕРЕСНАЯ ХИМИЯ С ВОЛОНТЕРОМ ВАЙТОМ&raquo;</h4>
+              <div class="activities__description">Ваш ребенок любит &laquo;похимичить&raquo; дома? Приводите ее к нам, на занятия кружка &laquo;Интересная химия&raquo;!</div>
+            </div>
+          </div>
+          <div class="activities__illustration" style="background-image: url('images/science-party.jpg'); background-size: cover"></div>
+        </div>
+      </div>
+    </div>
+    <div class="lectures">
+      <div class="container">
+        <div class="lectures__slider js-lectures-slider">
+          <div class="lectures__item">
+            <div class="lectures__portrait" style="background-image: url('images/tesla.jpg')">
+              <div class="filter filter--main"></div>
+              <div class="gradient gradient--main-transparent"></div>
+            </div>
+            <div class="lectures__illustration" style="background-image: url('images/tesla-transformator.jpg')"></div>
+            <div class="lectures__content">
+              <h4>ТРАНСФОРМАТОР ТЕСЛА</h4>
+              <p>Устройство, изобретенное Николой Теслой, что носит его имя и выполненное
+                в виде трансформатора, включенного обмотками в колебательный контур,
+                которые работают в резонансном режиме и служат для создания высокого
+                 электрического напряжения (десятки киловольт) высокой частоты (обычно, 20&hellip;100кГц). <br>
+                Устройство было запотентовано 22 сентября 1896 года, как
+                &laquo;Апарат для создания электрических токов высокой частоты и потанцеала&raquo;
+              </p><a href="lecture.html">ЧИТАТЬ ДАЛЬШЕ</a><a href="#">ПРИОБРЕСТИ БИЛЕТЫ НА ШОУ</a>
+            </div>
+          </div>
+          <div class="lectures__item">
+            <div class="lectures__portrait" style="background-image: url('images/tesla.jpg')">
+              <div class="filter filter--main"></div>
+              <div class="gradient gradient--main-transparent"></div>
+            </div>
+            <div class="lectures__illustration" style="background-image: url('images/tesla-transformator.jpg')"></div>
+            <div class="lectures__content">
+              <h4>ТРАНСФОРМАТОР ТЕСЛА</h4>
+              <p>Устройство, изобретенное Николой Теслой, что носит его имя и выполненное
+                в виде трансформатора, включенного обмотками в колебательный контур,
+                которые работают в резонансном режиме и служат для создания высокого
+                 электрического напряжения (десятки киловольт) высокой частоты (обычно, 20&hellip;100кГц). <br>
+                Устройство было запотентовано 22 сентября 1896 года, как
+                &laquo;Апарат для создания электрических токов высокой частоты и потанцеала&raquo;
+              </p><a href="lecture.html">ЧИТАТЬ ДАЛЬШЕ</a><a href="#">ПРИОБРЕСТИ БИЛЕТЫ НА ШОУ</a>
+            </div>
+          </div>
+          <div class="lectures__item">
+            <div class="lectures__portrait" style="background-image: url('images/tesla.jpg')">
+              <div class="filter filter--main"></div>
+              <div class="gradient gradient--main-transparent"></div>
+            </div>
+            <div class="lectures__illustration" style="background-image: url('images/tesla-transformator.jpg')"></div>
+            <div class="lectures__content">
+              <h4>ТРАНСФОРМАТОР ТЕСЛА</h4>
+              <p>Устройство, изобретенное Николой Теслой, что носит его имя и выполненное
+                в виде трансформатора, включенного обмотками в колебательный контур,
+                которые работают в резонансном режиме и служат для создания высокого
+                 электрического напряжения (десятки киловольт) высокой частоты (обычно, 20&hellip;100кГц). <br>
+                Устройство было запотентовано 22 сентября 1896 года, как
+                &laquo;Апарат для создания электрических токов высокой частоты и потанцеала&raquo;
+              </p><a href="lecture.html">ЧИТАТЬ ДАЛЬШЕ</a><a href="#">ПРИОБРЕСТИ БИЛЕТЫ НА ШОУ</a>
+            </div>
+          </div>
+          <div class="lectures__item">
+            <div class="lectures__portrait" style="background-image: url('images/tesla.jpg')">
+              <div class="filter filter--main"></div>
+              <div class="gradient gradient--main-transparent"></div>
+            </div>
+            <div class="lectures__illustration" style="background-image: url('images/tesla-transformator.jpg')"></div>
+            <div class="lectures__content">
+              <h4>ТРАНСФОРМАТОР ТЕСЛА</h4>
+              <p>Устройство, изобретенное Николой Теслой, что носит его имя и выполненное
+                в виде трансформатора, включенного обмотками в колебательный контур,
+                которые работают в резонансном режиме и служат для создания высокого
+                 электрического напряжения (десятки киловольт) высокой частоты (обычно, 20&hellip;100кГц). <br>
+                Устройство было запотентовано 22 сентября 1896 года, как
+                &laquo;Апарат для создания электрических токов высокой частоты и потанцеала&raquo;
+              </p><a href="lecture.html">ЧИТАТЬ ДАЛЬШЕ</a><a href="#">ПРИОБРЕСТИ БИЛЕТЫ НА ШОУ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contacts">
+      <div class="container container--z-index10">
+        <div class="contacts__wrapper">
+          <div class="contacts__info">
+            <div>
+              <p>Ждем вас по адресу</p>
+              <p>Г. КИЕВ, УЛ. ВЕРХНИЙ ВАЛ 2А</p>
+            </div>
+            <div>
+              <p>График работы музея:</p>
+              <p>ПН-ВЫХОДНОЙ</p>
+              <p>ВТ-ПТ: 09:30 - 19:00</p>
+              <p>СБ-ВС, ПРАЗДНИКИ: 10:00 - 20:00</p>
+            </div>
+            <div>
+              <p>Контакты</p>
+              <p>+38 (044) 425-65-81,</p>
+              <p>+38 (096) 477-97-91,</p>
+              <p>+38 (099) 256-71-27</p>
+            </div>
+            <p>enjoy@experimentanium.com.ua</p>
+          </div>
+          <div class="contacts__attributes">
+            <div class="contacts__attribute" style="background-image: url(&quot;images/homepage/cafe.jpg&quot;); background-position: -132px -20px">
+              <div class="filter"></div>
+              <div class="contacts__link">
+                <div style="width: 55px"><img src="images/icons/coffee.png"></div><a href="#">КАФЕТЕРИЙ</a>
+              </div>
+            </div>
+            <div class="contacts__attribute" style="background-image: url(&quot;images/homepage/shop.jpg&quot;); background-position: -156px -295px">
+              <div class="filter"></div>
+              <div class="contacts__link">
+                <div style="width: 40px"><img src="images/icons/shop.png"></div><a href="#">МАГАЗИН</a>
+              </div>
+            </div>
+            <div class="contacts__attribute"></div>
+            <div class="contacts__attribute" style="background-image: url(&quot;images/homepage/portal.jpg&quot;); background-position: -128px -63px">
+              <div class="filter"></div>
+              <div class="contacts__link">
+                <div style="width: 49px"><img src="images/icons/atom.png"></div><a href="#">ОБРАЗОВАТЕЛЬНЫЙ ПОРТАЛ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__contacts">
+            <div class="footer__logo">
+              <div><img src="images/logo.png"></div>
+              <p><span>Экспериментаниум</span> <br> музей популярной науки и техники</p>
+            </div>
+            <div class="footer__subscribe">
+              <div class="footer__header footer__header--roboto">Подписаться на новости</div>
+              <form>
+                <input placeholder="Введите e-mail" type="email">
+                <button class="fa fa-paper-plane"></button>
+              </form>
+            </div>
+            <div class="footer__social">
+              <div class="footer__header footer__header--roboto">Мы в социальных сетях</div><a class="fa fa-facebook"></a><a class="fa fa-twitter"></a>
+            </div>
+          </div>
+          <div class="footer__links">
+            <div>
+              <div>
+                <div class="footer__header">ЭКСПОЗИЦИЯ И ШОУ</div><a class="footer__link" href="#">Шру в музее</a><a class="footer__link" href="#">Экспозиция музея</a><a class="footer__link" href="#">Выездные шоу</a><a class="footer__link" href="#">3Д тур</a>
+              </div>
+              <div>
+                <div class="footer__header">НОВОСТИ</div><a class="footer__link" href="#">Новости музея</a><a class="footer__link" href="#">Новости из мира науки</a><a class="footer__link" href="#">Анонсы</a><a class="footer__link" href="#">Акции</a>
+              </div>
+              <div>
+                <div class="footer__header">ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ</div><a class="footer__link" href="#">Школьнык экскурсии</a><a class="footer__link" href="#">Научные кружки</a><a class="footer__link" href="#">Лекции</a><a class="footer__link" href="#">Мастер-классы</a>
+              </div>
+              <div>
+                <div class="footer__header">ОРГАНИЗАЦИЯ ПОДХОДОВ</div><a class="footer__link" href="#">День рождения</a><a class="footer__link" href="#">Корпоративные методы</a><a class="footer__link" href="#">Аренда помещений</a><a class="footer__link" href="#">Кафе</a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="footer__header">О НАС</div><a class="footer__link" href="#">Про музей</a><a class="footer__link" href="#">Правила поведения</a><a class="footer__link" href="#">Отзывы</a><a class="footer__link" href="#">Благотворительность</a><a class="footer__link" href="#">FAQ</a>
+              </div>
+              <div>
+                <div class="footer__header">МУЗЕЙ</div><a class="footer__link" href="#">Билеты</a><a class="footer__link" href="#">Магазин</a><a class="footer__link" href="#">Вакансии</a><a class="footer__link" href="#">Фото и видео</a><a class="footer__link" href="#">Благодарности</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

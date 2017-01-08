@@ -1,0 +1,13 @@
+@import './base/normalize';
+@import './base/variables';
+@import './base/mixins';
+@import './base/globals';
+@import './plugins/fontAwesome/font-awesome';
+@import './plugins/slick';
+@import './plugins/slick-theme';
+@import './base/fonts';
+@import './template/nav';
+@import './template/footer';
+@import './pages/home';
+@import './pages/lecture';
+@import './pages/lectures';

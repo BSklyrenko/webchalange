@@ -1,0 +1,16 @@
+@include font-face('./fonts/Roboto/Roboto-Regular', 'Roboto');
+@include font-face('./fonts/Roboto/Roboto-Bold', 'Roboto', $weight: bold);
+@include font-face('./fonts/Roboto/Roboto-Light', 'Roboto', $weight: 300);
+@include font-face('./fonts/Roboto/Roboto-LightItalic', 'Roboto', $weight: 300, $style: italic);
+@include font-face('./fonts/Roboto/Roboto-Italic', 'Roboto', $style: italic);
+
+@include font-face('./fonts/Roboto-Condensed/RobotoCondensed-Bold', 'Roboto-Condensed', $weight: bold);
+@include font-face('./fonts/Roboto-Condensed/RobotoCondensed-Regular', 'Roboto-Condensed');
+
+@include font-face('./fonts/Lato/Lato-Medium', 'Lato', 500);
+@include font-face('./fonts/Lato/Lato-Bold', 'Lato', $weight: bold);
+@include font-face('./fonts/Lato/Lato-Regular', 'Lato');
+
+@include font-face('./fonts/Open-Sans/OpenSans-Regular', 'Open-Sans');
+@include font-face('./fonts/Open-Sans/OpenSans-Bold', 'Open-Sans', $weight: bold);
+@include font-face('./fonts/Open-Sans/OpenSans-Light', 'Open-Sans', $weight: 300);

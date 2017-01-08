@@ -1,0 +1,100 @@
+doctype html
+html
+  include templates/head.pug
+  body
+    header.container--fixed
+      include templates/nav.pug
+    .lecture
+      .container.container--wide
+        .bread-crumbs
+          a(href="#").fa.fa-angle-left
+          ul
+            li <a href="#">ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ</a>
+            li <a href="lectures.html">ЛЕКЦИИ</a>
+            li <a href="#" class="active">ДИФУЗИЯ</a>
+      .container
+        .lecture__wrapper
+          .lecture__info
+            .lecture__poster(style="background-image: url('images/diffusion.jpg'); background-position: -465px -1100px;")
+            .lecture__schedule
+              div
+                div Когда:
+                div ВТ, CР, ЧТ
+                div 12:00, 16:00
+              div
+                div Продолжительность:
+                div 120 м
+              div
+                div Цена:
+                div от 250 грн.
+          .lecture__additionally
+            .lecture__tabs.js-tabs
+              div.active ИНФОРМАЦИЯ
+              div ОТЗЫВЫ <span>(2)</span>
+              div БИЛЕТЫ
+            .lecture__tabs-content.js-tabs-content
+              .lecture__tabs-info.active
+                p ЛЕКЦИЯ-ЭКСПЕРИМЕНТ
+                h4 ДИФУЗИЯ. ВЗАИМОДЕЙСТВИЕ АТОМОВ И МОЛЕКУЛ
+                p Дифузия (лат. diffusio &mdash; расширение, розтекание, рассеивание, взаимодействие) &mdash;
+                  | процесс взаимного проникновения молекул или атомов дного вещества между молекул или атовом другого,
+                  | что обычно приводит к выравниванию их концентрации во всем взаимном объеме.<br>
+                  | В некоторых случаях одно из веществ уже имеет уровновешанную концентрацию, и говорят
+                  | про дифузию одного вещества в другом. При этом обычно перенос вещества осуществляет из области
+                  | с высокой концентрации в область с низкой концентрацией (вдоль вектора градиента концентрации).
+                  | Примером дифузии может служить смешение газов (например, расширение запахов) или жидкостей (елси
+                  | в воду капнуть чернила, то вещество через некоторое время станет равномерно окрашенным).
+                  | Другие примеры связаны с твердым телом: атомы соприкасающихся металлов перемешиваются на границе соприкосновения.
+                  | Важную роль дифузия частиц играет в физике плазмы.
+
+              .lecture__tabs-reviews
+                .lecture__reviews
+                  -
+                    var reviews = [
+                      {title: 'Мария, г.Киев', rating: [1, 1, 1, 2, 3], comment: 'Класная лекция, прикольний и веселый профессор. Все очень детально россказали, и даже пригласили провести эксперимент. Очень рада, что купила билеты'},
+                      {title: 'Тарас, г.Одеса', rating: [1, 1, 1, 1, 1], comment: 'Я в восторге!!!. Все очень детально рассказали, и даже пригласили провести эксперимент. Приду еще раз'},
+                      {title: 'Мария, г.Киев', rating: [1, 1, 1, 2, 3], comment: 'Класная лекция, прикольний и веселый профессор. Все очень детально россказали, и даже пригласили провести эксперимент. Очень рада, что купила билеты'},
+                      {title: 'Тарас, г.Одеса', rating: [1, 1, 1, 1, 1], comment: 'Я в восторге!!!. Все очень детально рассказали, и даже пригласили провести эксперимент. Приду еще раз'}
+                    ];
+                  each review in reviews
+                    .lecture__reviews-item
+                      div
+                        span= review.title
+                        span Оценка:
+                          each star in review.rating
+                            if star == 1
+                              i.fa.fa-star
+                            else if star == 2
+                              i.fa.fa-star-half-o
+                            else
+                              i.fa.fa-star-o
+                      div= review.comment
+                .lecture__reviews-form
+                  p Посетили лукцию? Оставьте отзыв
+                  form
+                    input(placeholder='Имя')
+                    input(placeholder='Город')
+                    textarea(placeholder='Отзыв' rows="5")
+                    button(type='submit') ДОБАВИТЬ КОММЕНТАРИЙ
+
+              .lecture__tabs-tickets
+                -
+                  var content = [
+                    {text: 'Дети до 6 лет', price: '250 грн'},
+                    {text: 'Дети от 6 до 18 лет', price: '350 грн'},
+                    {text: 'Взрослы', price: '400 грн'},
+                    {text: 'Студенты', price: '400 грн'},
+                    {text: 'Группы до 10 человек', price: '200 грн(с человека)'},
+                    {text: 'Группы от 11 человек', price: '150 грн(с человека)'}
+                  ];
+                each item in content
+                  div
+                    div= item.text
+                    div= item.price
+                    div
+                      button БИЛЕТЫ
+    include templates/common-contacts.pug
+    include templates/footer.pug
+
+
+    script(src="app.js")

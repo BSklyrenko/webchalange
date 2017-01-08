@@ -1,0 +1,132 @@
+.lectures-page {
+  @media (min-width: 992px) {
+    & {
+      margin-top: 220px;
+    }
+  }
+
+  &__wrapper {
+    @include half-main-color(45%);
+    position: relative;
+    padding-bottom: 20px;
+
+    @media (min-width: 992px) {
+      padding-bottom: 100px;
+    }
+  }
+
+  &__list {
+    margin-top: 90px;
+  }
+
+
+  &__lection {
+    max-width: 1060px;
+    border-bottom: 2px solid $color-white;
+    margin: 0 auto 15px;
+
+    &:first-child {
+      .lectures-page__illustration { background-image: url("images/lectures/item_1.jpg"); }
+    }
+    &:nth-child(2) {
+      .lectures-page__illustration { background-image: url('images/lectures/item_2.jpg'); }
+    }
+    &:nth-child(3) {
+      .lectures-page__illustration { background-image: url('images/lectures/item_3.jpg'); }
+    }
+    &:last-child {
+      .lectures-page__illustration { background-image: url('images/lectures/item_4.jpg'); }
+    }
+
+    &:nth-child(2n) {
+      & > div {
+        &:first-child { order: 2; }
+        &:last-child { order: 1; }
+      }
+    }
+
+    @media (min-width: 992px) {
+      display: flex;
+      align-items: center;
+      border-bottom: none;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__illustration {
+    display: none;
+
+    @media (min-width: 992px) {
+      width: 50%;
+      height: 315px;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+
+  &__description {
+    padding: 10px;
+    color: $color-white;
+    font-family: 'Roboto', sans-serif;
+
+    div {
+      &:first-child {
+
+      }
+    }
+
+    a {
+      display: inline-block;
+      font-family: 'Roboto-Condensed';
+      background-color: transparent;
+      padding: 15px 20px;
+      border: 2px solid $color-white;
+      color: $color-white;
+      width: 100%;
+      font-weight: bold;
+      box-sizing: border-box;
+      text-align: center;
+      text-decoration: none;
+
+      cursor: pointer;
+
+      @media (min-width: 992px) {
+        width: auto;
+        text-indent: left;
+        margin-bottom: 60px;
+
+        &:hover {
+          color: $color-main;
+          transition: color .2s, background-color .2s;
+          background-color: $color-white;
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      background-color: $color-main3;
+      width: 50%;
+      padding: 110px 60px 0;
+      box-sizing: border-box;
+
+      box-shadow: 3px 2px 43px 0 rgba(0, 0, 0, .35);
+
+      h3 {
+        margin-bottom: 50px;
+        text-shadow: 2px 1px 38px rgba(27, 27, 30, .75);
+      }
+
+      div {
+        &:first-child {
+          text-shadow: 2px 1px 38px rgba(27, 27, 30, .75);
+        }
+      }
+    }
+  }
+}

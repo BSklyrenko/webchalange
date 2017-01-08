@@ -1,0 +1,32 @@
+.container.container--wide(data-fixed="false")
+  .nav
+    .nav__search
+      form
+        button(type="submit")
+          i.fa.fa-search
+        input(type="text")
+      .nav__language
+        span РУС
+        i.fa.fa-chevron-down
+    .nav__content
+      .nav__title
+        .nav__logo
+          img(src="./images/logo.png")
+        div
+          h1 Эксперементаниум
+          p Музей популярной науки и техники
+        i.fa.fa-bars.js-toggle-nav
+      .nav__navigation
+        a(href="home.html").nav__link ГЛАВНАЯ
+        span.nav__link ЭКСПОЗИЦИЯ И ШОУ
+          i.fa.fa-bars.js-toggle-sub-nav
+          .nav__slide-menu
+            .nav__sublink ШОУ В МУЗЕЕ
+            .nav__sublink СОБЫТИЯ И ЛЕКЦИИ
+            .nav__sublink ВЫЕЗДНЫЕ ШОУ
+            .nav__sublink 3D ТУР
+        a(href="").nav__link НОВОСТИ
+        a(href="").nav__link ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ
+        a(href="").nav__link ОРГАНИЗАЦИЯ ПРАЗДНИКОВ
+        a(href="").nav__link О НАС
+      button.nav__buy БИЛЕТЫ

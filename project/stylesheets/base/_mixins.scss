@@ -1,0 +1,48 @@
+@mixin font-face($path, $name, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $name;
+    src: url("#{$path}.ttf") format("truetype");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin absolute-full-size {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin arrow($origin) {
+  content: '';
+  width: 30px;
+  height: 5px;
+  background-color: #530f89;
+  transform-origin: $origin 100%;
+  position: absolute;
+}
+
+@mixin half-main-color($width: 50%) {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-main3;
+  }
+
+  @media (min-width: 992px) {
+    &::before { width: $width; }
+  }
+}
+
+@mixin placeholder-style($color: black, $style: normal) {
+  &::-webkit-input-placeholder { color: $color; font-style: $style;}
+  &::-moz-placeholder { color: $color; font-style: $style;}
+  &:-ms-input-placeholder { color: $color; font-style: $style;}
+  &:-moz-placeholde { color: $color; font-style: $style;}
+}

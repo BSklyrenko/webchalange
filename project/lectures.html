@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="container--fixed">
+      <div class="container container--wide" data-fixed="false">
+        <div class="nav">
+          <div class="nav__search">
+            <form>
+              <button type="submit"><i class="fa fa-search"></i></button>
+              <input type="text">
+            </form>
+            <div class="nav__language"><span>РУС</span><i class="fa fa-chevron-down"></i></div>
+          </div>
+          <div class="nav__content">
+            <div class="nav__title">
+              <div class="nav__logo"><img src="./images/logo.png"></div>
+              <div>
+                <h1>Эксперементаниум</h1>
+                <p>Музей популярной науки и техники</p>
+              </div><i class="fa fa-bars js-toggle-nav"></i>
+            </div>
+            <div class="nav__navigation"><a class="nav__link" href="home.html">ГЛАВНАЯ</a><span class="nav__link">ЭКСПОЗИЦИЯ И ШОУ<i class="fa fa-bars js-toggle-sub-nav"></i>
+                <div class="nav__slide-menu">
+                  <div class="nav__sublink">ШОУ В МУЗЕЕ</div>
+                  <div class="nav__sublink">СОБЫТИЯ И ЛЕКЦИИ</div>
+                  <div class="nav__sublink">ВЫЕЗДНЫЕ ШОУ</div>
+                  <div class="nav__sublink">3D ТУР</div>
+                </div></span><a class="nav__link" href="">НОВОСТИ</a><a class="nav__link" href="">ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ</a><a class="nav__link" href="">ОРГАНИЗАЦИЯ ПРАЗДНИКОВ</a><a class="nav__link" href="">О НАС</a></div>
+            <button class="nav__buy">БИЛЕТЫ</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="lectures-page">
+      <div class="lectures-page__wrapper">
+        <div class="container container--wide">
+          <div class="bread-crumbs"><a class="fa fa-angle-left" href="#"></a>
+            <ul>
+              <li><a href="#">ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ</a></li>
+              <li><a href="#" class="active">ЛЕКЦИИ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="lectures-page__list">
+            <div class="lectures-page__lection">
+              <div class="lectures-page__description">
+                <div>Лекция-эксперимент</div>
+                <h3>ДИФУЗИЯ.ВЗАИМОДЕЙСТВИЕ МОЛЕКУЛ И АТОМОВ В ПРИРОДЕ</h3><a href="lecture.html">ПОДРОБНЕЕ</a>
+                <div>
+                  <p>Время проведения:<span> Понедельник 12:30</span></p>
+                  <p>Цена: от<span> 250 грн</span></p>
+                </div>
+              </div>
+              <div class="lectures-page__illustration"></div>
+            </div>
+            <div class="lectures-page__lection">
+              <div class="lectures-page__description">
+                <div>Лекция-эксперимент</div>
+                <h3>ПРИРОДА МАГНИТОВ. ЭКСПЕРИМЕНТЫ С МАГНИТАМИ И ЖЕЛЕЗОМ</h3><a href="lecture.html">ПОДРОБНЕЕ</a>
+                <div>
+                  <p>Время проведения:<span> Понедельник 15:30</span></p>
+                  <p>Цена: от<span> 90 грн</span></p>
+                </div>
+              </div>
+              <div class="lectures-page__illustration"></div>
+            </div>
+            <div class="lectures-page__lection">
+              <div class="lectures-page__description">
+                <div>Выставка  «Свет и призма»</div>
+                <h3>ИНСТАЛЯЦИИ С СВЕТОВЫМИ ЭФФЕКТАМИ</h3><a href="lecture.html">ПОДРОБНЕЕ</a>
+                <div>
+                  <p>Время проведения:<span> Понедельник 10:00</span></p>
+                  <p>Цена: от<span> 300 грн</span></p>
+                </div>
+              </div>
+              <div class="lectures-page__illustration"></div>
+            </div>
+            <div class="lectures-page__lection">
+              <div class="lectures-page__description">
+                <div>Лекция-эксперимент</div>
+                <h3>ПРИРОДЫ СВЕТА. ЭФФЕКТ ПРИЛОМЛЕНИЯ В ВОДЕ</h3><a href="lecture.html">ПОДРОБНЕЕ</a>
+                <div>
+                  <p>Время проведения:<span> Понедельник 15:30</span></p>
+                  <p>Цена: от<span> 90 грн</span></p>
+                </div>
+              </div>
+              <div class="lectures-page__illustration"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="common-contacts">
+      <div class="container container--wide">
+        <div class="common-contacts__wrapper">
+          <div class="common-contacts__info">
+            <div>
+              <p>Ждем вас по адресу</p>
+              <p>Г. КИЕВ, УЛ. ВЕРХНИЙ ВАЛ 2А</p>
+            </div>
+            <div>
+              <p>График работы музея:</p>
+              <p>ПН-ВЫХОДНОЙ</p>
+              <p>ВТ-ПТ: 09:30 - 19:00</p>
+              <p>СБ-ВС, ПРАЗДНИКИ: 10:00 - 20:00</p>
+            </div>
+            <div>
+              <p>Контакты</p>
+              <p>+38 (044) 425-65-81,</p>
+              <p>+38 (096) 477-97-91,</p>
+              <p>+38 (099) 256-71-27</p>
+            </div>
+            <p>enjoy@experimentanium.com.ua</p>
+          </div>
+          <div class="common-contacts__map"></div>
+          <div class="common-contacts__booking">
+            <div>
+              <p>ЗАПЛАНИРОВАТЬ ВИЗИТ</p>
+              <form>
+                <input placeholder="10/05/2016">
+                <input placeholder="11:00">
+                <input placeholder="Количество билетов">
+                <button>ЗАБРОНИРОВАТЬ</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__contacts">
+            <div class="footer__logo">
+              <div><img src="images/logo.png"></div>
+              <p><span>Экспериментаниум</span> <br> музей популярной науки и техники</p>
+            </div>
+            <div class="footer__subscribe">
+              <div class="footer__header footer__header--roboto">Подписаться на новости</div>
+              <form>
+                <input placeholder="Введите e-mail" type="email">
+                <button class="fa fa-paper-plane"></button>
+              </form>
+            </div>
+            <div class="footer__social">
+              <div class="footer__header footer__header--roboto">Мы в социальных сетях</div><a class="fa fa-facebook"></a><a class="fa fa-twitter"></a>
+            </div>
+          </div>
+          <div class="footer__links">
+            <div>
+              <div>
+                <div class="footer__header">ЭКСПОЗИЦИЯ И ШОУ</div><a class="footer__link" href="#">Шру в музее</a><a class="footer__link" href="#">Экспозиция музея</a><a class="footer__link" href="#">Выездные шоу</a><a class="footer__link" href="#">3Д тур</a>
+              </div>
+              <div>
+                <div class="footer__header">НОВОСТИ</div><a class="footer__link" href="#">Новости музея</a><a class="footer__link" href="#">Новости из мира науки</a><a class="footer__link" href="#">Анонсы</a><a class="footer__link" href="#">Акции</a>
+              </div>
+              <div>
+                <div class="footer__header">ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ</div><a class="footer__link" href="#">Школьнык экскурсии</a><a class="footer__link" href="#">Научные кружки</a><a class="footer__link" href="#">Лекции</a><a class="footer__link" href="#">Мастер-классы</a>
+              </div>
+              <div>
+                <div class="footer__header">ОРГАНИЗАЦИЯ ПОДХОДОВ</div><a class="footer__link" href="#">День рождения</a><a class="footer__link" href="#">Корпоративные методы</a><a class="footer__link" href="#">Аренда помещений</a><a class="footer__link" href="#">Кафе</a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="footer__header">О НАС</div><a class="footer__link" href="#">Про музей</a><a class="footer__link" href="#">Правила поведения</a><a class="footer__link" href="#">Отзывы</a><a class="footer__link" href="#">Благотворительность</a><a class="footer__link" href="#">FAQ</a>
+              </div>
+              <div>
+                <div class="footer__header">МУЗЕЙ</div><a class="footer__link" href="#">Билеты</a><a class="footer__link" href="#">Магазин</a><a class="footer__link" href="#">Вакансии</a><a class="footer__link" href="#">Фото и видео</a><a class="footer__link" href="#">Благодарности</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
